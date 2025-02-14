@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Periodic Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1>Interactive Periodic Table</h1>
+        <div class="periodic-table">
+            <!-- Hydrogen -->
+            <div class="element" style="grid-column: 1 / span 1;" data-symbol="H" data-name="Hydrogen" data-number="1">H</div>
+            
+            <!-- Group 1 Elements -->
+            <div class="element" style="grid-column: 1 / span 1; grid-row: 2;" data-symbol="Li" data-name="Lithium" data-number="3">Li</div>
+            <div class="element" style="grid-column: 1 / span 1; grid-row: 3;" data-symbol="Na" data-name="Sodium" data-number="11">Na</div>
+            <div class="element" style="grid-column: 1 / span 1; grid-row: 4;" data-symbol="K" data-name="Potassium" data-number="19">K</div>
+            <div class="element" style="grid-column: 1 / span 1; grid-row: 5;" data-symbol="Rb" data-name="Rubidium" data-number="37">Rb</div>
+            <div class="element" style="grid-column: 1 / span 1; grid-row: 6;" data-symbol="Cs" data-name="Cesium" data-number="55">Cs</div>
+            <div class="element" style="grid-column: 1 / span 1; grid-row: 7;" data-symbol="Fr" data-name="Francium" data-number="87">Fr</div>
+
+            <!-- Group 18 (Noble Gases) -->
+            <div class="element" style="grid-column: 18; grid-row: 1;" data-symbol="He" data-name="Helium" data-number="2">He</div>
+            <div class="element" style="grid-column: 18; grid-row: 2;" data-symbol="Ne" data-name="Neon" data-number="10">Ne</div>
+            <div class="element" style="grid-column: 18; grid-row: 3;" data-symbol="Ar" data-name="Argon" data-number="18">Ar</div>
+            <div class="element" style="grid-column: 18; grid-row: 4;" data-symbol="Kr" data-name="Krypton" data-number="36">Kr</div>
+            <div class="element" style="grid-column: 18; grid-row: 5;" data-symbol="Xe" data-name="Xenon" data-number="54">Xe</div>
+            <div class="element" style="grid-column: 18; grid-row: 6;" data-symbol="Rn" data-name="Radon" data-number="86">Rn</div>
+
+            <!-- Transition Metals -->
+            <div class="element" style="grid-column: 4; grid-row: 4;" data-symbol="Sc" data-name="Scandium" data-number="21">Sc</div>
+            <div class="element" style="grid-column: 5; grid-row: 4;" data-symbol="Ti" data-name="Titanium" data-number="22">Ti</div>
+            <div class="element" style="grid-column: 6; grid-row: 4;" data-symbol="V" data-name="Vanadium" data-number="23">V</div>
+            <div class="element" style="grid-column: 7; grid-row: 4;" data-symbol="Cr" data-name="Chromium" data-number="24">Cr</div>
+            <div class="element" style="grid-column: 8; grid-row: 4;" data-symbol="Mn" data-name="Manganese" data-number="25">Mn</div>
+            <div class="element" style="grid-column: 9; grid-row: 4;" data-symbol="Fe" data-name="Iron" data-number="26">Fe</div>
+            <div class="element" style="grid-column: 10; grid-row: 4;" data-symbol="Co" data-name="Cobalt" data-number="27">Co</div>
+            <div class="element" style="grid-column: 11; grid-row: 4;" data-symbol="Ni" data-name="Nickel" data-number="28">Ni</div>
+            
+           <!-- Group 2 (Alkaline Earth Metals) -->
+<div class="element" style="grid-column: 2; grid-row: 2;" data-symbol="Be" data-name="Beryllium" data-number="4">Be</div>
+<div class="element" style="grid-column: 2; grid-row: 3;" data-symbol="Mg" data-name="Magnesium" data-number="12">Mg</div>
+<div class="element" style="grid-column: 2; grid-row: 4;" data-symbol="Ca" data-name="Calcium" data-number="20">Ca</div>
+<div class="element" style="grid-column: 2; grid-row: 5;" data-symbol="Sr" data-name="Strontium" data-number="38">Sr</div>
+<div class="element" style="grid-column: 2; grid-row: 6;" data-symbol="Ba" data-name="Barium" data-number="56">Ba</div>
+<div class="element" style="grid-column: 2; grid-row: 7;" data-symbol="Ra" data-name="Radium" data-number="88">Ra</div>
+
+<!-- Post-Transition Metals -->
+<div class="element" style="grid-column: 13; grid-row: 3;" data-symbol="Al" data-name="Aluminum" data-number="13">Al</div>
+<div class="element" style="grid-column: 13; grid-row: 4;" data-symbol="Ga" data-name="Gallium" data-number="31">Ga</div>
+<div class="element" style="grid-column: 13; grid-row: 5;" data-symbol="In" data-name="Indium" data-number="49">In</div>
+<div class="element" style="grid-column: 13; grid-row: 6;" data-symbol="Tl" data-name="Thallium" data-number="81">Tl</div>
+<div class="element" style="grid-column: 13; grid-row: 7;" data-symbol="Nh" data-name="Nihonium" data-number="113">Nh</div>
+
+<!-- Metalloids -->
+<div class="element" style="grid-column: 14; grid-row: 3;" data-symbol="Si" data-name="Silicon" data-number="14">Si</div>
+<div class="element" style="grid-column: 14; grid-row: 4;" data-symbol="Ge" data-name="Germanium" data-number="32">Ge</div>
+<div class="element" style="grid-column: 14; grid-row: 5;" data-symbol="Sn" data-name="Tin" data-number="50">Sn</div>
+<div class="element" style="grid-column: 14; grid-row: 6;" data-symbol="Pb" data-name="Lead" data-number="82">Pb</div>
+<div class="element" style="grid-column: 14; grid-row: 7;" data-symbol="Fl" data-name="Flerovium" data-number="114">Fl</div>
+
+<!-- Nonmetals -->
+<div class="element" style="grid-column: 15; grid-row: 3;" data-symbol="P" data-name="Phosphorus" data-number="15">P</div>
+<div class="element" style="grid-column: 15; grid-row: 4;" data-symbol="As" data-name="Arsenic" data-number="33">As</div>
+<div class="element" style="grid-column: 15; grid-row: 5;" data-symbol="Sb" data-name="Antimony" data-number="51">Sb</div>
+<div class="element" style="grid-column: 15; grid-row: 6;" data-symbol="Bi" data-name="Bismuth" data-number="83">Bi</div>
+<div class="element" style="grid-column: 15; grid-row: 7;" data-symbol="Mc" data-name="Moscovium" data-number="115">Mc</div>
+
+<div class="element" style="grid-column: 16; grid-row: 3;" data-symbol="S" data-name="Sulfur" data-number="16">S</div>
+<div class="element" style="grid-column: 16; grid-row: 4;" data-symbol="Se" data-name="Selenium" data-number="34">Se</div>
+<div class="element" style="grid-column: 16; grid-row: 5;" data-symbol="Te" data-name="Tellurium" data-number="52">Te</div>
+<div class="element" style="grid-column: 16; grid-row: 6;" data-symbol="Po" data-name="Polonium" data-number="84">Po</div>
+<div class="element" style="grid-column: 16; grid-row: 7;" data-symbol="Lv" data-name="Livermorium" data-number="116">Lv</div>
+
+<!-- Halogens -->
+<div class="element" style="grid-column: 17; grid-row: 3;" data-symbol="Cl" data-name="Chlorine" data-number="17">Cl</div>
+<div class="element" style="grid-column: 17; grid-row: 4;" data-symbol="Br" data-name="Bromine" data-number="35">Br</div>
+<div class="element" style="grid-column: 17; grid-row: 5;" data-symbol="I" data-name="Iodine" data-number="53">I</div>
+<div class="element" style="grid-column: 17; grid-row: 6;" data-symbol="At" data-name="Astatine" data-number="85">At</div>
+<div class="element" style="grid-column: 17; grid-row: 7;" data-symbol="Ts" data-name="Tennessine" data-number="117">Ts</div>
+
+<!-- Lanthanides -->
+<div class="element lanthanoid" style="grid-column: 4; grid-row: 8;" data-symbol="La" data-name="Lanthanum" data-number="57">La</div>
+<div class="element lanthanoid" style="grid-column: 5; grid-row: 8;" data-symbol="Ce" data-name="Cerium" data-number="58">Ce</div>
+<div class="element lanthanoid" style="grid-column: 6; grid-row: 8;" data-symbol="Pr" data-name="Praseodymium" data-number="59">Pr</div>
+<div class="element lanthanoid" style="grid-column: 7; grid-row: 8;" data-symbol="Nd" data-name="Neodymium" data-number="60">Nd</div>
+<div class="element lanthanoid" style="grid-column: 8; grid-row: 8;" data-symbol="Pm" data-name="Promethium" data-number="61">Pm</div>
+<div class="element lanthanoid" style="grid-column: 9; grid-row: 8;" data-symbol="Sm" data-name="Samarium" data-number="62">Sm</div>
+<div class="element lanthanoid" style="grid-column: 10; grid-row: 8;" data-symbol="Eu" data-name="Europium" data-number="63">Eu</div>
+
+<!-- Actinides -->
+<div class="element actinoid" style="grid-column: 4; grid-row: 9;" data-symbol="Ac" data-name="Actinium" data-number="89">Ac</div>
+<div class="element actinoid" style="grid-column: 5; grid-row: 9;" data-symbol="Th" data-name="Thorium" data-number="90">Th</div>
+<div class="element actinoid" style="grid-column: 6; grid-row: 9;" data-symbol="Pa" data-name="Protactinium" data-number="91">Pa</div>
+<div class="element actinoid" style="grid-column: 7; grid-row: 9;" data-symbol="U" data-name="Uranium" data-number="92">U</div>
+<div class="element actinoid" style="grid-column: 8; grid-row: 9;" data-symbol="Np" data-name="Neptunium" data-number="93">Np</div>
+<div class="element actinoid" style="grid-column: 9; grid-row: 9;" data-symbol="Pu" data-name="Plutonium" data-number="94">Pu</div>
+<div class="element actinoid" style="grid-column: 10; grid-row: 9;" data-symbol="Am" data-name="Americium" data-number="95">Am</div>
+<div class="element actinoid" style="grid-column: 11; grid-row: 9;" data-symbol="Cm" data-name="Curium" data-number="96">Cm</div>
+
+<!-- Complete all 118 elements -->
+
+            <!-- Add more elements here -->
+
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2 id="element-name"></h2>
+            <p><strong>Symbol:</strong> <span id="element-symbol"></span></p>
+            <p><strong>Atomic Number:</strong> <span id="element-number"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
